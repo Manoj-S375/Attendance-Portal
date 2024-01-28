@@ -1,0 +1,57 @@
+.heading {
+    text-align: center;
+    color: aquamarine;
+    font-size: 50px;
+}
+
+.container{
+    margin-left:25%;
+}
+
+.w-message{
+    font-size: 35px;
+    color: #ff0089;
+}
+
+.b-attend{
+    transition-duration: 1s;
+    background-color: #0055ff;
+    color: mintcream;
+    font-size: 20px;
+}
+
+.b-attend:hover{
+    transition-duration: 1s;
+    background-color: darkturquoise;
+    transition-duration: 2s;
+}
+
+.e-message{
+    font-size: 20px;
+    color: orangered;
+}
+
+.w-message{
+    font-size: 20px;
+    color :greenyellow;
+}
+
+
+.bu2{
+    color: #ff0089;
+    background-color: #0055ff;
+    font-size: 20px;
+    position: absolute;
+    right: 52%;
+    top: 170px;
+}
+
+
+.bu3{
+    color: #ff0089;
+    background-color: #0055ff;
+    font-size: 20px;
+    position: absolute;
+    right: 52%;
+    top: 55%;
+}
