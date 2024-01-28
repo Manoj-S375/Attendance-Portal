@@ -1,0 +1,74 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendance Details</title>
+        <link rel = "stylesheet" type = "text/css" href="{%static 'attendance.css' %}">
+    </head>
+    <body>
+        <h1>Attendance Summary</h1>
+        <p id = "reg">Register Number:  {{reg}}</p>
+        <div id = "attab">
+            <table>
+                <tr id = "trf">
+                    <td>Subject</td>
+                    <td>Attended Classes</td>
+                </tr>
+                <tr>
+                    <td>Data Structures and Algorithm</td>
+                    <td>{{ dsa }}</td>
+                </tr>
+                <tr>
+                    <td>DataBase Management System</td>
+                    <td>{{ dbms }}</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>{{ os }}</td>
+                </tr>
+                <tr>
+                    <td>Computer Architecture</td>
+                    <td>{{ ca }}</td>
+                </tr>
+                <tr>
+                    <td>Software Engineering</td>
+                    <td>{{ se }}</td>
+                </tr>
+                <tr>
+                    <td>Formal Languages</td>
+                    <td>{{ fl }}</td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+        <div id="aform">
+            <form method="post" action="{% url 'seeatt'%}">
+                {% csrf_token%}
+                <label for = "sub" id = "dlab">Subject</label><br />
+                <select id = "sub" name="sub">
+                    <option value="DS">Data Structures and Algorithm</option>
+                    <option value="DB">DataBase Management System</option>
+                    <option value="OS">Operating System</option>
+                    <option value="CA">Computer Architecture</option>
+                    <option value="SE">Software Engineering</option>
+                    <option value = "FL">Formal Languages</option>
+                </select><br />
+                <input type = "submit" name = "submit" id = "btn" value = "Submit"/>
+            </form>
+        </div>
+        {% if dt %}
+            <div id="stat">
+                <table>
+                    <tr>
+                        <td>Date</td>
+                    </tr>
+                    {% for i in dt %}
+                        <tr>
+                            <td>{{ i }}</td>
+                        </tr>
+                    {% endfor %}
+                </table> 
+            </div> 
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,187 @@
+body {
+    background-image: url(blue.jpg);
+}
+
+.bdy{
+    background-image: url(blue\ -\ back.jpg);
+}
+
+#cont, #acont, .dby{
+    position: relative;
+    left: 540px;
+    top: 220px;
+    line-height: 1.8;
+    background-color: turquoise;
+    padding: 10px;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+#lb, #alb{
+    position: relative;
+    font-family: Times, serif;
+    font-size: 15px;
+    color:darkviolet;
+    left: 25px;
+}
+
+#btn, #abtn{
+    position: relative;
+    left: 80px;
+    top: 10px;
+    font-family: Times, serif;
+    font-size: 1em;
+    color: blueviolet;
+    background-color: cyan;
+    border-color: chocolate;
+    border-radius: 10px;
+    width: 75px;
+    height: 25px;
+}
+
+h2{
+    font-family: serif;
+    font-size: 25px;
+    position: relative;
+    left:80px;
+    color: azure;
+}
+
+#tx, #atx, #atx1{
+    position: relative;
+    left: 20px;
+    width: 180px;
+}
+
+h2, .lh2{
+    position: relative;
+    text-align: center;
+    color:darkorange;
+    font-family: Times;
+    top: 6em;
+    left: 0em;
+}
+
+#acont{
+    top: 160px;
+    line-height: 2;
+    background-color: rgb(11 11 161);
+    padding: 20px;
+    border: 2px solid rgba(236, 9, 9, 0.571);
+    border-radius: 10px;
+}
+
+#alb{
+    top: 1.4em;
+    color:#f509d2;
+}
+
+#atx, #atx1{
+    top: 15px;
+}
+
+#atx1{
+    width: 220px;
+}
+
+#abtn{
+    top: 25px;
+}
+
+table{
+    border-spacing: 1em;
+}
+
+td{
+    padding: 5px;
+}
+td:nth-child(1){
+    color: #44ff08;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+td:nth-child(2){
+    color: #f509d2;
+    font-size: 23px;
+}
+#dcont{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    left: 38%;
+    top: 10px;
+    background-color: #2981b2;
+    padding: 10px;
+    border-radius: 1em;
+    border: 2.5px dotted #f20a0a;
+}
+
+#atbut{
+    position: relative;
+    font-size: 2em;
+    color: crimson;
+    top: 10px;
+    left: 570px;
+}
+
+#dbtn{
+    position: relative;
+    top: -16px;
+    left: 65px;
+    font-family: Times, serif;
+    color: blueviolet;
+    background-color: cyan;
+    border-color: chocolate;
+    border-radius: 10px;
+    width: 75px;
+    font-size: 20px;
+    height: 30px;
+}
+
+.dh{
+    position: relative;
+    text-align: center;
+    color:darkorange;
+    font-family: Times;
+    top: 70px;
+    left: 35px;
+}
+
+.dh{
+    top: 20px;
+    font-size: 2.5em;
+}
+
+.lh2{
+    top: 0em;
+}
+
+#go2, #dgo{
+    position: relative;
+    font-size: 20px;
+    height: 30px;
+    left: 100px;
+    top: -16px;
+    font-family: Times, serif;
+    color: blueviolet;
+    background-color: cyan;
+    border-color: chocolate;
+    border-radius: 10px;
+    width: 75px;
+}
+
+#dgo{
+    left: 65px;
+}
+
+#vatt{
+    position: relative;
+    font-size: 2em;
+    color: crimson;
+    top: 5em;
+    left: 575px;
+}

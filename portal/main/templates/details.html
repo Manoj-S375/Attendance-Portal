@@ -1,0 +1,63 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Details</title>
+        <link rel = "stylesheet" type = "text/css" href="{%static 'styles.css' %}">
+    </head>
+    <body class = "bdy">
+        <h2 class = "dh">Student Details</h2>
+        <div id = "dcont">
+            <table>
+                {% for a in ptr %}
+                    {% if a.regno == check %}
+                        <tr>
+                            <td>Name</td>
+                            <td>{{ a.rname }}</td>
+                        </tr>
+                        <tr>
+                            <td>Register Number</td>
+                            <td>{{ a.regno }}</td>
+                        </tr>
+                        <tr>
+                            <td>D.O.B</td>
+                            <td>{{ a.dob }}</td>
+                        </tr>
+                        <tr>
+                            <td>Course</td>
+                            <td>{{ a.course }}</td>
+                        </tr>
+                        <tr>
+                            <td>Year</td>
+                            <td>{{ a.ryear }}</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>{{ a.address }}</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td>{{ a.phone }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        </div>
+        <div id = "atbut">
+            <p>View your Attendance</p>
+            <input type = "submit" name = "submit" id = "go2" value = "Go"/>
+        </div>
+        <script>
+            document.getElementById("dbtn").addEventListener("click", function()
+            {
+                window.location.href = '/attend/';
+            });
+        </script>
+        <script>
+            document.getElementById("go2").addEventListener("click", function()
+            {
+                window.location.href = '/seeatt/';
+            });
+        </script>
+    </body>
+</html>

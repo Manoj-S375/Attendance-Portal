@@ -1,0 +1,94 @@
+body {
+    background-image: url(blue\ -\ back.jpg);
+}
+
+h1{
+    text-align: center;
+    color:darkorange;
+    font-family: Times;
+    top: 20px;
+    position: relative;
+}
+
+#reg{
+    font-size: 20px;
+    color: rgb(178 6 237);
+    position: relative;
+    top: 55px;
+}
+#attab{
+    width: 520px;
+    height: 475px;
+    position: relative;
+    top: 55px;
+    background-color: #2981b2;
+    padding: 10px;
+    border-radius: 1em;
+    border: 2.5px dotted #f20a0a;
+    line-height: 1.5;
+}
+
+table{
+    border-spacing: 1em;
+    width:100%;
+}
+
+td{
+    padding: 5px;
+}
+
+td:nth-child(1){
+    color: #f509d2;
+    font-size: 23px;
+    width: 350px;
+}
+
+td:nth-child(2){
+    color: #44ff08;
+    font-size: 23px;
+    width:125px;
+}
+
+table tr:first-child td{
+    color: #f7e409;
+    font-size: 23px;
+    font-weight: bold;
+    
+}
+
+#aform{
+    position: relative;
+    top: -450px;
+    left: 1100px;
+    width: 200px;
+    height: 125px;
+    padding: 10px 5px;
+    line-height:25px ;
+}
+
+#btn{
+    position: relative;
+    font-family: Times, serif;
+    color: #01579B;
+    background-color: #C5CAE9;
+    border-color: chocolate;
+    border-radius: 10px;
+    width: 65px;
+    font-size: 15px;
+    height: 25px;
+    top: 10px;
+}
+#stat{
+    position: relative;
+    top: -500px;
+    left: 600px;
+    border:2px dashed #44ff08;
+    background-color: #01579B;
+    width: 250px;
+}
+
+#dlab{
+    font-family: serif;
+    font-size: 18px;
+    color: #E91E63;
+}

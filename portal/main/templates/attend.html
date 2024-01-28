@@ -1,0 +1,43 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendance</title>
+        <link rel = "stylesheet" type = "text/css" href="{%static 'styles.css' %}">
+    </head>
+    <body class = "bdy">
+        <h2>Mark Student Attendance</h2>
+        <div id="acont">
+            <form method="post" action="{% url 'attend'%}">
+                {% csrf_token%}
+                <label for="rno" id = "alb">Register Number</label><br />
+                <input type = "text" id = "atx" name = "rno" maxlength="11" required><br/ >
+                <label for = "sub" id = "alb">Subject</label><br />
+                <select id = "atx1" name="sub">
+                    <option value="DS">Data Structures and Algorithm</option>
+                    <option value="DB">DataBase Management System</option>
+                    <option value="OS">Operating System</option>
+                    <option value="CA">Computer Architecture</option>
+                    <option value="SE">Software Engineering</option>
+                    <option value = "FL">Formal Languages</option>
+                </select><br />
+                <label for="dt" id = "alb">Date</label><br />
+                <input type="date" name = "dt" id = "atx" required/><br />
+                <input type = "submit" name = "submit" id = "abtn" value = "Submit"/>
+            </form>
+        </div>
+        <div id = "vatt">
+            <p>View Attendance</p>
+            <input type = "submit" name = "submit" id = "dgo" value = "Go"/>
+        </div>
+        <script>
+            document.getElementById("dgo").addEventListener("click", function()
+            {
+                window.location.href = '/sumy/';
+            });
+        </script>
+        {% if messages %}
+             <p style="color:tomato; position: relative; text-align: center; font-size: 20px; top: -400px;">{{ messages}}</p>
+        {% endif %}
+    </body>
+</html>

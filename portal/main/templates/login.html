@@ -1,0 +1,25 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel = "stylesheet" type = "text/css" href="{%static 'styles.css' %}">
+    </head>
+
+    <body>
+        <div id = "cont">
+            <h2 class="lh2">LOGIN</h2>
+            <form method="post" action="{% url 'login'%}">
+                {% csrf_token%}
+                <label for="name" id = "lb">User Name</label><br />
+                <input type = "text" id = "tx" name = "name" maxlength="11" required><br/ >
+                <label for="pass" id = "lb">Password</label><br />
+                <input type="password" id = "tx" name = "pass" required><br />
+                <input type = "submit" name = "submit" id = "btn" value = "Login"/>
+            </form>
+        </div>
+        {% if messages %}
+             <p style="color:tomato; position: relative; text-align: center; font-size: 20px; bottom: 120px; left: -15px;">{{ messages}}</p>
+        {% endif %}
+    </body>
+</html>

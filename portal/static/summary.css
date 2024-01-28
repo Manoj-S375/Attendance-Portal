@@ -1,0 +1,103 @@
+body {
+    background-image: url(blue\ -\ back.jpg);
+}
+
+h1{
+    text-align: center;
+    color:#5E35B1;
+    font-family: Times;
+    top: 20px;
+    position: relative;
+}
+
+#regform{
+    width: 200px;
+    height: 125px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    padding: 10px 5px;
+    line-height:35px ;
+}
+
+#abtn{
+    position: relative;
+    color: #01579B;
+    background-color: #C5CAE9;
+    border-color: chocolate;
+    border-radius: 10px;
+    width: 65px;
+    font-size: 15px;
+    height: 25px;
+    top: 15px;  
+}
+
+#lreg{
+    font-family: serif;
+    font-size: 18px;
+    color: #E91E63;
+}
+
+#attab{
+    width: 520px;
+    height: 475px;
+    position: relative;
+    left: 400px;
+    top: -80px;
+    background-color: #2e9450;
+    padding: 10px;
+    border-radius: 1em;
+    border: 2.5px dotted #f20a0a;
+    line-height: 1.5;
+}
+
+table{
+    border-spacing: 1em;
+    width:100%;
+}
+
+td{
+    padding: 5px;
+}
+
+td:nth-child(1){
+    color: #09d6f5;
+    font-size: 23px;
+    width: 350px;
+}
+
+td:nth-child(2){
+    color: #fff708;
+    font-size: 23px;
+    width:125px;
+}
+
+table tr:first-child td{
+    color: #fc8e08;
+    font-size: 23px;
+    font-weight: bold;
+    
+}
+
+#block{
+    position: absolute;
+    top: 670px;
+    font-size: 2em;
+    color: crimson;
+    left: 550px;
+}
+
+
+#dbtn{
+    position: relative;
+    left: 80px;
+    font-family: Times, serif;
+    color: blueviolet;
+    background-color: cyan;
+    border-color: chocolate;
+    border-radius: 10px;
+    width: 75px;
+    font-size: 20px;
+    height: 30px;
+    top: -16px;
+}

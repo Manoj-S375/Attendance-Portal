@@ -1,0 +1,63 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendance Details</title>
+        <link rel = "stylesheet" type = "text/css" href="{%static 'summary.css' %}">
+    </head>
+    <body>
+        <h1>Attendance Summary</h1>
+        <div id="regform">
+            <form method="post" action="{% url 'sumy' %}">
+                {% csrf_token %}
+                <label for="reg" id="lreg">Register Number</label><br />
+                <input type="text" id="treg" name="reg" required><br />
+                <input type = "submit" name = "submit" id = "abtn" value = "Submit"/>
+            </form>
+        </div>
+        {% if signal %}
+            <div id = "attab">
+                <table>
+                    <tr id = "trf">
+                        <td>Subject</td>
+                        <td>Attended Classes</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures and Algorithm</td>
+                        <td>{{ dsa }}</td>
+                    </tr>
+                    <tr>
+                        <td>DataBase Management System</td>
+                        <td>{{ dbms }}</td>
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>{{ os }}</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Architecture</td>
+                        <td>{{ ca }}</td>
+                    </tr>
+                    <tr>
+                        <td>Software Engineering</td>
+                        <td>{{ se }}</td>
+                    </tr>
+                    <tr>
+                        <td>Formal Languages</td>
+                        <td>{{ fl }}</td>
+                    </tr>
+                </table>
+            </div>
+        {% endif %}
+        <div id = "block">
+            <p>Mark Attendance</p>
+            <input type = "submit" name = "submit" id = "dbtn" value = "Go"/>
+        </div>
+        <script>
+            document.getElementById("dbtn").addEventListener("click", function()
+            {
+                window.location.href = '/attend/';
+            });
+        </script>
+    </body>
+</html>
